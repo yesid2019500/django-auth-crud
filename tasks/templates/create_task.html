@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Create task</h1>
+
+<p class="bg-danger text-white">
+  {{error}}
+</p>
+
+<div class="form-create">
+    <form action="/create_task/" method="POST">
+     {% csrf_token %}
+  {{form}}
+  <button class="btn btn-success w-100 mt-2" >Save</button>
+</form>
+</div>
+
+
+{% endblock %}

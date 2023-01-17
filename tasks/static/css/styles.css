@@ -1,0 +1,303 @@
+
+
+h1,h2,h3 {
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.bg {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(130deg, rgba(0, 0, 0, 0.427) 0%, rgba(209,36,55,1) 100%);
+    color:white;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-item,.nav-link {
+    color: #fff !important;
+}
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+  background: url(https://d500.epimg.net/cincodias/imagenes/2020/02/27/lifestyle/1582814593_931183_1582814665_noticia_normal.jpg);
+  background-size: cover;
+  background-position: center;
+  animation-duration: 5s;
+  animation-name: bg;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg{
+    from {
+        background: url(https://d500.epimg.net/cincodias/imagenes/2020/02/27/lifestyle/1582814593_931183_1582814665_noticia_normal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background: url(https://sp7pc.com/wp-content/uploads/2017/10/22055_16-680x408.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } 
+    100%{
+        background: url(https://www.copytrans.jp/app/uploads/sites/2/2021/03/how-to-backup-notes.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    } 
+   
+}
+
+/* banner */
+h1 {
+    /* font-family: 'cairo', serif; */
+    color: #fff;
+    font-weight:800;
+    font-size:80px;
+    margin-bottom:10px;
+        text-shadow: 1px 1px 1px #919191,
+          1px 2px 1px #919191,
+          1px 3px 1px #919191,
+          1px 4px 1px #919191,
+          1px 5px 1px #919191,
+          1px 6px 1px #919191,
+          1px 7px 1px #919191,
+          1px 8px 1px #919191,
+          1px 9px 1px #919191,
+          1px 10px 1px #919191,
+      1px 18px 6px rgba(16,16,16,0.4),
+      1px 22px 10px rgba(16,16,16,0.2),
+      1px 25px 35px rgba(16,16,16,0.2),
+      1px 30px 60px rgba(16,16,16,0.4);
+  }
+  h2 {
+    font-family: 'cairo', sans-serif;
+    font-weight:100;
+    font-size:30px;
+    margin-top:0;
+  }
+  p {
+    font-family: 'cairo', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #333333;
+  }
+  
+  .header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(130deg, rgba(0, 0, 0, 0.427) 0%, rgba(209,36,55,1) 100%);
+    color:white;
+  }
+  .logo {
+    width:50px;
+    fill:white;
+    padding-right:15px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  
+  .inner-header {
+    height:80vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+
+
+  /* LOGIN */
+
+  .content-form {
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+
+  .content-form form {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.525);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .content-form  form  input {
+    width: 95%;
+    border: none;
+    padding: 10px;
+  }
+
+  .content-form  form  label {
+    color: #fff;
+    margin-top: 10px;
+  }
+
+
+  /* register */
+
+  .content-form2 {
+    width: 420px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .error {
+    width: 200px;
+    position: absolute;
+    top: 27%;
+  }
+  
+  .container .content-form2 form {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.525);
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .container .content-form2 ul li {
+    list-style: none;
+    color: #fff;
+  }
+
+  .container .content-form2  form  input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: none;
+    padding: 10px;
+  }
+
+  .content-form2  form  label {
+    color: #fff;
+    margin-top: 5px;
+  }
+
+
+/* create task */
+
+.form-create {
+    width: 400px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.617);
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 60%;
+    border-radius: 10px;
+}
+
+.form-create form {
+    margin: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-create label {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.container-options {
+    width: 300px;
+    margin: auto;
+}

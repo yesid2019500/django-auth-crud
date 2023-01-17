@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="container-header">
+  <h1>tasks</h1> 
+ 
+</div>
+
+<!-- 
+<ul>
+  {% for task in tasks %}
+  <li>
+    <a href="{% url 'task_detail' task.id %}">
+      {% if task.important %}
+      <strong>{{task.title}}</strong>
+      {% else %} {{task.id}} {{task.title}} {% endif %}
+      <p>{{task.description}}</p>
+      <p>{{task.user.username}}</p>
+
+      {{task.datecompleted|date:'M j Y:i'}}
+    </a>
+  </li>
+  {% endfor %}
+</ul> -->
+
+{% for task in tasks %}
+<div class="card m-2">
+  <h5 class="card-header">
+  Author: <a href="{% url 'task_detail' task.id %}">{{task.user.username}}</a>
+  </h5>
+  <div class="card-body m-2">
+   <a  href="{% url 'task_detail' task.id %}">
+    <h5 class="card-title">
+      {% if task.important %}
+      <strong>{{task.title}}</strong>
+      {% else %} {{task.id}} {{task.title}} {% endif %}
+    </h5>
+    <p class="card-text">{{task.description}}</p>
+   </a>
+   
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}
